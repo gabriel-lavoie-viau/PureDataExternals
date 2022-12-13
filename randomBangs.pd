@@ -1,0 +1,18 @@
+#N canvas 415 177 450 300 12;
+#X msg 30 70 1;
+#X obj 30 46 loadbang;
+#X obj 30 122 random 1000;
+#X obj 30 147 < 50;
+#X obj 30 173 select 1;
+#X obj 30 95 metro 50;
+#X obj 116 17 inlet;
+#X obj 30 245 outlet;
+#X obj 9 17 inlet;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 7 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 1;
+#X connect 8 0 5 0;
